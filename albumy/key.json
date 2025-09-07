@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dotted-cedar-435919-g0",
+  "private_key_id": "4236de6eb4f5cbfcc68ce5879f0fcb2602826d01",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCigxgOx6mqaYHg\n+UFeAeXhdxrrQ7mCZnne7qanw/t9as8S4Addt+B0dIRWpPIu2j1JnTecK1G7exCa\nfRbELkUBKO2BGnhHzrRS3hTIbM7rLV0UFCxdavIvFHhNPgd9/fzr92LJbGU02Rvk\nphhBrZDmuGOhX2KXRPIJ38fyWcRzbcCMySKXnqauMSViJ5qM2kL2LFI1rDl0Otn7\nglwVf1/4RR7TVWXFb7FgHACkVZ60Ux0HBlxCLAMjhliBVIli+beOZtJdzjGZ6ON2\ngAvh8DjV05805FZJRPxqQfVIh2huBsvwHhALhmm0wrM+kJUb0j1LYi3yJayI5B2A\niWxrdTYnAgMBAAECggEAFcIvn8BOkH59NpNTk96f2hw0V85C3EQUNSuxgezU6JSQ\nZ8U5t0E9+tmkORBEoiPzk2j1X8zSWKPANARjiUjDUcXFEZrAV/zuWoSu4QGQgsnE\nGJggMzHKffs4+uk/NONOJdnYOYJwhS7nHn9j6AdGdghiGTfINNtfp2rK6UE+SFCc\nRMa3isaPoMGFhFQJB1DvAtvCHBZupVnAfnG6OoFz7XskECpJzeOSEl/UMxa2yNvE\n9QBzgoepyiKJAyU9rS07CQZFILzKe30wVf2uXohLBbOo9KTqrBaMUngwAFqUiZqS\nocXku+w1kI+FXo0+62mC9Iy9U5u8oCKtPw/bgkkRgQKBgQDMK7lp/PWEIw+5r1c+\n9Mcb8tPIt2JpeHoQF+g+IVHkOE+Qhf4mLtsvKOApzxsyGH+Le/lQ+yiLyBB/DZMb\nGyjTV0EXHOFZKGfuovsogeWtdLO+dT2/Dv4vGHIQxHM7f/Mt1oCLPT6u7WfaHykP\naf7VLOeR8gd+rtvuokREVX2A8QKBgQDLxCFLaFc4MRUtwT1G1ybsZaSO3bGiXDaQ\nABb3R9JZCxodly6UWIibP9pb3PZLen4Xafvf0SvLy5ljzxDNKiDdB+x8Yalqdx1q\nrYhq5WPaId91w+AG4TzyyhNZyIGTJ0kPIgqPS26z6O7EVB195T0lMKdx8IbkBgJY\nwGbYvtColwKBgQCYwUn7A3iJgVX9njNPdgIWZgqQDKyDrtDcg5aODY3gi0T0I1ww\nIzR4R0PX5A074NpkeL/jF9aRJoE5HeXnDN3xqUGY0lHDzBhekfAJsY4uxbbJk5w7\n+zKv98E3zFNOu/8sV2VbR9pDNHpT1qZ40twHkI49QnDbFmaUVzFuUuwQcQKBgAsl\nenDGj2bagH8VQAXdBRsPYFYUWIA6LR3pc1gpjJ8kVVRjDcA9q5NahdZamvp8A+PB\n/2454fxu8cAc9p1SfaO5qD0RlpPlWi2Yuoqma7Tl/3RQt7OIpK3fUfmqVzQ2hO+X\n/B3kkXSz/EOvGkHlxVeAdthrwOU+UuiJ9dZLcdyXAoGBAKoTSVf8odnyTEoBP+Pt\nN2gEyXiMMuPZbr/J/5HqtvZh7NW9JtBVau1Ok7UN2uBxS/uT3e4V5ANhXMubfefs\nGx3thxY7hTP2WJcMhmo0LZfThpYf+EjB5M5Grb3lh1uGWkCHowJD1lB60Uwr7Fmv\nJKAS34/Q8TVzT9YU9gxfmeh7\n-----END PRIVATE KEY-----\n",
+  "client_email": "machinelearning-655@dotted-cedar-435919-g0.iam.gserviceaccount.com",
+  "client_id": "101463484856035246836",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/machinelearning-655%40dotted-cedar-435919-g0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

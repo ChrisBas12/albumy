@@ -133,6 +133,46 @@ def upload():
         )
         db.session.add(photo)
         db.session.commit()
+        # ML Code (~18 lines): Use Google Cloud Vision for alt_text and auto-tags
+        try:
+            from google.cloud import vision
+            import io
+            import os
+
+            client = vision.ImageAnnotatorClient()
+            image_path = os.path.join(current_app.config['UPLOAD_PATH'], filename)
+            with io.open(image_path, 'rb') as image_file:
+                content = image_file.read()
+            image = vision.Image(content=content)
+
+            # Object detection for tags (label_detection)
+            objects = client.label_detection(image=image).label_annotations
+            top_objects = [label.description.lower() for label in objects[:5]]  # Top 5 objects as tags
+
+            # Add auto-tags if not existing
+            for obj in top_objects:
+                tag = Tag.query.filter_by(name=obj).first()
+                if not tag:
+                    tag = Tag(name=obj)
+                    db.session.add(tag)
+                    db.session.commit()
+                if tag not in photo.tags:
+                    photo.tags.append(tag)
+
+            # Description for alt_text (use labels to generate simple caption if no description)
+            if not form.description.data:
+                alt_text = f"A photo containing {', '.join(top_objects)}."
+                photo.alt_text = alt_text
+                db.session.commit()
+            else:
+                photo.alt_text = form.description.data  # Reuse description as alt if provided
+
+            # For better caption, could use text_detection or external, but keep simple with labels
+        except Exception as e:
+            current_app.logger.error(f"Vision API error: {e}")  # Fallback: no auto
+
+        return redirect(url_for('main.show_photo', photo_id=photo.id))  # Original
+
     return render_template('main/upload.html')
 
 

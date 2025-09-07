@@ -20,16 +20,16 @@ from albumy.blueprints.user import user_bp
 from albumy.extensions import bootstrap, db, login_manager, mail, dropzone, moment, whooshee, avatars, csrf
 from albumy.models import Role, User, Photo, Tag, Follow, Notification, Comment, Collect, Permission
 from albumy.settings import config
-
-
+from dotenv import load_dotenv
+from .extensions import db, migrate
 def create_app(config_name=None):
     if config_name is None:
         config_name = os.getenv('FLASK_CONFIG', 'development')
 
     app = Flask('albumy')
-    
+    load_dotenv()
     app.config.from_object(config[config_name])
-
+    migrate.init_app(app, db)
     register_extensions(app)
     register_blueprints(app)
     register_commands(app)
